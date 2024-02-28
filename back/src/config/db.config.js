@@ -4,36 +4,36 @@ dotenv.config();
 const env = process.env;
 
 const development = {
-  username: env.MYSQL_USERNAME,
-  password: env.MYSQL_PASSWORD,
-  database: env.MYSQL_DATABASE,
-  host: env.MYSQL_HOST,
+  username: env.DB_USERNAME,
+  password: env.DB_PASSWORD,
+  database: env.DB_NAME,
+  host: env.DB_HOST,
   dialect: "mysql",
-  port: env.MYSQL_PORT,
+  port: env.DB_PORT,
   ssl: "Amazon RDS",
   logging: console.log,
   timezone: "+09:00",
 };
 
 const production = {
-  username: env.MYSQL_USERNAME,
-  password: env.MYSQL_PASSWORD,
-  database: env.MYSQL_DATABASE,
-  host: env.MYSQL_HOST,
+  username: env.DB_USERNAME,
+  password: env.DB_PASSWORD,
+  database: env.DB_NAME,
+  host: env.DB_HOST,
   dialect: "mysql",
-  port: env.MYSQL_PORT,
+  port: env.DB_PORT,
   ssl: "Amazon RDS",
   logging: console.log,
   timezone: "+09:00",
 };
 
 const test = {
-  username: env.MYSQL_USERNAME,
-  password: env.MYSQL_PASSWORD,
-  database: env.MYSQL_DATABASE_TEST,
-  host: env.MYSQL_HOST,
+  username: env.DB_USERNAME,
+  password: env.DB_PASSWORD,
+  database: env.DB_NAME_TEST,
+  host: env.DB_HOST,
   dialect: "mysql",
-  port: env.MYSQL_PORT,
+  port: env.DB_PORT,
   ssl: "Amazon RDS",
   logging: console.log,
   timezone: "+09:00",

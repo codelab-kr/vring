@@ -7,7 +7,7 @@ import ItemList from "../components/Item/ItemList.js";
 import SlideBanner from "../components/UI/SlideBanner.js";
 
 const Main = (props) => {
-  const portNum = 5000;
+  const portNum = 4000;
   const url = "http://" + window.location.hostname + ":" + portNum + "/";
 
   const [itemList, setItemList] = useState([]);

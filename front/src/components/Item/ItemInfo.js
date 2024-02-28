@@ -4,7 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 
 const ItemInfo = () => {
-  const portNum = 5000;
+  const portNum = 4000;
   const url = "http://" + window.location.hostname + ":" + portNum + "/";
   const navigate = useNavigate();
   const { itemId } = useParams();

@@ -101,7 +101,6 @@ dist
 # SSL
 .crt
 .key
-src/config/keys/server.key
-src/config/keys/server.crt
 
 node_modules
+.yarn
